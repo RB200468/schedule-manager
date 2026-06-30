@@ -1,0 +1,30 @@
+@use "./styles/variables" as *;
+
+:root {
+  font: 18px/145% #{$sans};
+    
+  --bg-1: #{$bg-1-light};
+  --bg-2: #{$bg-2-light};
+  --bg-3: #{$bg-3-light};
+
+  --text-1: #{$text-1-light};
+  --text-2: #{$text-2-light};
+  --text-3: #{$text-3-light};
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-1: #{$bg-1-dark};
+    --bg-2: #{$bg-2-dark};
+    --bg-3: #{$bg-3-dark};
+
+    --text-1: #{$text-1-dark};
+    --text-2: #{$text-2-dark};
+    --text-3: #{$text-3-dark};
+  }
+}

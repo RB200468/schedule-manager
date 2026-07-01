@@ -5,10 +5,14 @@ import "../styles/loginPage.scss"
 function LoginPage() {
   const navigate = useNavigate();
 
+  function loginWithGoogle() {
+    window.location.href = "http://localhost:3000/auth/google";
+  }
+
   return (
     <div className="loginContainer"> 
         <div className="loginCard">
-            <div className="providerBtn">
+            <div className="providerBtn" onClick={loginWithGoogle}>
                 <div className='providerSvg'>
                     <svg viewBox="0 0 262.00 262.00" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" fill="#000000" stroke="#000000" stroke-width="0.00262">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
